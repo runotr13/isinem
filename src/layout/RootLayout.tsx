@@ -21,11 +21,11 @@ const CustomLayout: React.FC<LayoutProps> = ({ children }) => {
   // const isKatalogPage = pathname === ROUTES.KATALOG;
   return (
     <>
-      {headers.home}
+      {/* {headers.home} */}
       <main className="">{children}</main>
       {/* <Toaster richColors position="top-right" /> */}
       {/* <CookieBanner /> */}
-      {footers.home}
+      {/* {footers.home} */}
     </>
   );
 };

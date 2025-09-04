@@ -11,46 +11,45 @@ import { NextIntlClientProvider } from "next-intl";
 
 export function generateMetadata() {
   const baseUrl =
-    process.env.NEXT_PUBLIC_SERVICE_URL || "https://www.dila.com/";
+    process.env.NEXT_PUBLIC_SERVICE_URL || "https://www.isinemmakina.com.tr/";
 
   return {
-    title: "DILA GOLD",
-    description: "DILA GOLD",
-    keywords: "altın , gold , dila gold , dila",
-    author: "DILA",
-    creator: "DILA",
-    publisher: "DILA",
+    title: "Isınem | Nem Alma ve Kurutma Sistemleri",
+    description:
+      "Isınem, endüstriyel kurutma sistemleri, nem alma makineleri ve enerji verimli çözümleriyle sektörün öncüsü. Ev, şantiye ve sanayi alanlarında profesyonel hizmet.",
+    keywords:
+      "kurutma sistemleri, nem alma cihazı, endüstriyel kurutma, şap kurutma, inşaat sonrası nem giderme, rutubet kurutma, enerji verimli makineler, parke öncesi kurutma, endüstriyel fırınlar, makine kiralama, Isınem",
     metadataBase: new URL(baseUrl),
+    alternates: {
+      canonical: baseUrl,
+      languages: {
+        tr: baseUrl,
+        en: `${baseUrl}en/`,
+      },
+    },
     openGraph: {
       type: "website",
-      title: "DILA",
-      description: "DILA",
+      title: "Isınem | Nem Alma ve Kurutma Sistemleri",
+      description:
+        "Isınem, nem alma ve endüstriyel kurutma çözümleri sunar. Yüksek kalite, enerji verimliliği ve güvenilirlik.",
       url: baseUrl,
-      siteName: "DILA",
+      siteName: "Isınem",
       locale: "tr_TR",
-      images: [
-        {
-          url: `${baseUrl}/assets/images/og-default.jpg`, // özel OG görselin varsa bunu kullan
-          width: 1200,
-          height: 630,
-          alt: "DILA",
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: "DILA",
-      description: "DILA",
-      site: "@DILA", // varsa Twitter hesabınız
-      creator: "@DILA",
       images: [
         {
           url: `${baseUrl}/assets/images/og-default.jpg`,
           width: 1200,
           height: 630,
-          alt: "DILA",
+          alt: "Isınem Kurutma Sistemleri",
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Isınem | Nem Alma ve Kurutma Sistemleri",
+      description:
+        "Isınem, nem alma ve kurutma sistemlerinde güvenilir çözümler sunar.",
+      images: [`${baseUrl}/assets/images/og-default.jpg`],
     },
     icons: {
       icon: "/favicon.ico",
@@ -62,9 +61,9 @@ export function generateMetadata() {
       index: true,
       follow: true,
     },
-    themeColor: "#FFFFFF",
-    category: "DILA",
-    applicationName: "DILA",
+    themeColor: "#fff", // NemTürk gibi mavi ton kullanılabilir
+    applicationName: "Isınem",
+    category: "Endüstriyel Kurutma",
   };
 }
 
@@ -93,8 +92,8 @@ export default async function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="Turkish" />
-        <meta name="copyright" content="DILA" />
-        <meta name="publisher" content="DILA" />
+        <meta name="copyright" content="Isınem" />
+        <meta name="publisher" content="Isınem" />
       </head>
       <body
         className={`text-sm antialiased text-light-default-baseTextBlack`}

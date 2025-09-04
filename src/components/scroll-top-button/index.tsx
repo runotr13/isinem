@@ -2,7 +2,6 @@
 
 import clsx from "clsx";
 import { twMerge } from "tailwind-merge";
-
 import React from "react";
 import { ArrowUp } from "lucide-react";
 
@@ -22,15 +21,18 @@ const ScrollToTopButton = () => {
       className={twMerge(
         clsx(
           "fixed bottom-4 right-4 md:bottom-10 md:right-10",
-          "p-3 rounded-full border-primary border-[1px]",
-          "bg-bg12 text-primary hover:text-primary_rgb",
-          // Gradient arka plan ayarı
-          "bg-[linear-gradient(to_right,#AADBFF1F_0%,#AADBFF1F_50%,transparent_50%,transparent_100%)]",
+          "p-3 rounded-full border border-[#013682]",
+          "bg-white text-[#013682] hover:text-white",
+          "shadow-lg hover:shadow-xl",
+          // Gradient arka plan - primary color ile
+          "bg-[linear-gradient(to_right,#01368201F_0%,##01368201F_50%,transparent_50%,transparent_100%)]",
           "bg-[length:200%_100%] bg-left",
-          // Hover durumunda arka plan pozisyonunu saga kaydır
-          "hover:bg-right",
+          // Hover durumunda arka plan pozisyonunu sağa kaydır ve rengi değiştir
+          "hover:bg-right hover:bg-[#013682]",
           // Animasyon ayarları
-          "transition-all duration-500 ease-in-out"
+          "transition-all duration-500 ease-in-out",
+          // Z-index for visibility
+          "z-50"
         )
       )}
     >
