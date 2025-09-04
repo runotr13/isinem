@@ -1,0 +1,57 @@
+{
+    "header": {
+        "basket": "Sepet",
+        "sunum": "Sunumlar",
+        "tarihce": "Tarihce",
+        "iletisim": "İletişim",
+        "hamburger": {
+            "call": "Gelişmiş arama",
+            "fav": "Favoriler",
+            "signin": "Giriş yap / üye ol",
+            "basket": "Sepet"
+        }
+    },
+    "footer": {
+        "copyright": {
+            "text": "© Persan Home Studio {year}. Tüm Hakları Saklıdır.",
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Use"
+        },
+        "form": {
+            "title": "Bültene kayıt olun",
+            "text": "Fırsatlar, yeni ürünler ve koleksiyonlar için e-posta bültenimize kaydolun."
+        },
+        "product": {
+            "p1": "Ürünler",
+            "p2": "Kartelalar",
+            "p3": "Yeni Gelenler",
+            "p4": "En Beğenilenler"
+        },
+        "text": "Dekorasyon modasının Türk Tekstili kalitesiyle özgün yansımaları..."
+    },
+    "error": {
+        "input": {
+            "mail": {
+                "required": "E-posta alanı zorunludur",
+                "default": "Geçerli bir e-posta adresi giriniz"
+            }
+        }
+    },
+    "button": {
+        "send": "Gönder"
+    },
+    "otherCollection": {
+        "title": "Diğer Koleksiyonlar"
+    },
+    "login": {
+        "sendingMail": "Mail adresinize link gönderildi",
+        "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin veya destek ile iletişime geçin."
+    },
+    "verify": {
+        "start": "Doğrulama işlemi başlatılıyor...",
+        "noToken": "Geçersiz bağlantı! Token bulunamadı.",
+        "verifying": "Email doğrulanıyor...",
+        "success": "Email başarıyla doğrulandı!",
+        "fail": "Doğrulama başarısız!"
+    }
+}

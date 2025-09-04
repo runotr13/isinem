@@ -1,0 +1,17 @@
+{
+    "header": {
+        "basket": "Basket",
+        "sunum": "Presentations",
+        "tarihce": "History",
+        "iletisim": "Contact",
+        "hamburger": {
+            "call": "Advanced search",
+            "fav": "Favorites",
+            "signin": "Sign in / Register",
+            "basket": "Basket"
+        }
+    },
+    "footer": {
+        "copyright": "PERSAN HOME STUDIO {year}. ALL RIGHTS RESERVED."
+    }
+}
