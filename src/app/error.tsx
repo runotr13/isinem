@@ -140,7 +140,7 @@ export default function Error({
 
             <div onClick={reset}>
               <Button
-                variant="dark"
+                variant="primary"
                 className="w-full sm:w-auto px-8 py-3 rounded-xl font-medium transition-all duration-200 transform hover:scale-105 shadow-lg"
               >
                 🔄 Tekrar Dene
