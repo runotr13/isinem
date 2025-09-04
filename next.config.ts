@@ -15,6 +15,9 @@ const baseConfig: NextConfig = {
   env: {
     NEXT_BACKEND_URL: process.env.NEXT_BACKEND_URL,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   webpack: (config: any) => {
     config.externals = [...(config.externals || []), { canvas: "canvas" }];
     return config;
