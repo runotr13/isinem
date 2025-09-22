@@ -9,6 +9,10 @@ import {
   Clock,
   Award,
   Users,
+  Sparkles,
+  Droplet,
+  Building,
+  Home,
 } from "lucide-react";
 import Link from "next/link";
 import { ROUTES } from "@/router/routes";
@@ -74,17 +78,52 @@ const Services = () => {
       icon: <Star className="w-8 h-8 text-light-buttons-secondary-solidBg" />,
       link: ROUTES.BOYA_KURUTMA,
     },
+    {
+      title: "Şantiye Kurutma",
+      description:
+        "Şantiyelerde nem ve rutubet sorunlarını ortadan kaldıran etkili kurutma çözümleri.",
+      icon: <Home className="w-8 h-8 text-light-buttons-secondary-solidBg" />,
+      link: ROUTES.SANTIYE_KURUTMA,
+    },
+    {
+      title: "İnşaat Kurutma",
+      description:
+        "İnşaat projelerinde güvenli ve hızlı kurutma sağlayarak iş süreçlerini hızlandırıyoruz.",
+      icon: (
+        <Building className="w-8 h-8 text-light-buttons-secondary-solidBg" />
+      ),
+      link: ROUTES.INSAAT_KURUTMA,
+    },
+    {
+      title: "Nem Alma",
+      description:
+        "Kapalı alanlarda fazla nemi alarak sağlıklı ve dengeli yaşam ortamları sunuyoruz.",
+      icon: (
+        <Droplet className="w-8 h-8 text-light-buttons-secondary-solidBg" />
+      ),
+      link: ROUTES.NEM_ALMA,
+    },
+    {
+      title: "Ozonla Koku Giderme",
+      description:
+        "Ozon teknolojisi ile ortamdaki kötü kokuları kalıcı olarak yok ediyoruz.",
+      icon: (
+        <Sparkles className="w-8 h-8 text-light-buttons-secondary-solidBg" />
+      ),
+      link: ROUTES.OZONLA_KOKU_GIDERME,
+    },
   ];
+
   return (
-    <section id="hizmetler" className="py-20 bg-gray-50">
+    <section id="hizmetler" className="md:py-20 py-10 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h4 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             <span className="text-light-buttons-secondary-solidBg">
-              Kurutma
+              Nem Alma ve Kurutma
             </span>{" "}
             Hizmetlerimiz
-          </h2>
+          </h4>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Her türlü nem ve rutubet problemine karşı özel çözümlerimizle
             yanınızdayız.

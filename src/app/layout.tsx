@@ -24,7 +24,7 @@ export function generateMetadata() {
       canonical: baseUrl,
       languages: {
         tr: baseUrl,
-        en: `${baseUrl}en/`,
+        en: `${baseUrl}`,
       },
     },
     openGraph: {
@@ -37,7 +37,7 @@ export function generateMetadata() {
       locale: "tr_TR",
       images: [
         {
-          url: `${baseUrl}/assets/images/og-default.jpg`,
+          url: `${baseUrl}/logo.svg`,
           width: 1200,
           height: 630,
           alt: "Isınem Kurutma Sistemleri",
@@ -49,7 +49,7 @@ export function generateMetadata() {
       title: "Isınem | Nem Alma ve Kurutma Sistemleri",
       description:
         "Isınem, nem alma ve kurutma sistemlerinde güvenilir çözümler sunar.",
-      images: [`${baseUrl}/assets/images/og-default.jpg`],
+      images: [`${baseUrl}/logo.svg`],
     },
     icons: {
       icon: "/favicon.ico",

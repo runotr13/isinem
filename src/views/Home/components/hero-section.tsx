@@ -1,12 +1,14 @@
 import { Button } from "@/components/button";
+import { ROUTES } from "@/router/routes";
+import Link from "next/link";
 import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20">
+    <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 md:py-20 py-10">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Profesyonel{" "}
             <span className="  text-light-buttons-secondary-solidBg">
               Kurutma
@@ -23,8 +25,16 @@ const HeroSection = () => {
             çözüyoruz.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button>Ücretsiz Keşif Talep Et</Button>
-            <Button variant="secondary">Hizmetlerimizi İncele</Button>
+            <Link href={ROUTES.CONTACT}>
+              <Button className="md:w-auto w-full">
+                Ücretsiz Keşif Talep Et
+              </Button>
+            </Link>
+            <Link href={ROUTES.SERVICES}>
+              <Button variant="secondary" className="md:w-auto w-full">
+                Hizmetlerimizi İncele
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

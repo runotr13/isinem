@@ -64,7 +64,9 @@ const Web = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button variant="secondary">İletişime Geçin</Button>
+          <Link href={ROUTES.CONTACT}>
+            <Button variant="secondary">İletişime Geçin</Button>
+          </Link>
           <Language />
         </div>
       </div>

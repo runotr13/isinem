@@ -1,91 +1,113 @@
 import React from "react";
-
-import { Droplets } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Phone, Mail } from "lucide-react";
+import CopyRight from "./CopyRight";
+import { ROUTES } from "@/router/routes";
+import Link from "next/link";
 
 const Footer = () => {
-  const googleMapsUrl =
-    "https://www.google.com/maps/place/%C3%87eliktepe,+34413+Ka%C4%9F%C4%B1thane%2F%C4%B0stanbul/@41.0841085,28.9977611,17z/data=!3m1!4b1!4m6!3m5!1s0x14cab661c4d1c769:0x833d42567d76db24!8m2!3d41.0827955!4d28.9979805!16s%2Fg%2F122hv9cd?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D";
+  const links = [
+    {
+      text: "Ana Sayfa",
+      href: ROUTES.HOME,
+    },
+    {
+      text: "Hakkımızda",
+      href: ROUTES.ABOUT,
+    },
+    {
+      text: "Hizmetlerimiz",
+      href: ROUTES.SERVICES,
+    },
+    {
+      text: "Ürünlerimiz",
+      href: ROUTES.URUNLERIMIZ,
+    },
+    {
+      text: "İletişim",
+      href: ROUTES.CONTACT,
+    },
+  ];
+  const icons = [
+    // {
+    //   id: 1,
+    //   icon: "/assets/images/footer/facebook-icons.png",
+    //   link: "https://www.instagram.com/hizligotur.com.tr/",
+    //   target: "_blank",
+    // },
+    {
+      id: 2,
+      icon: "/images/footer/x-icons.png",
+      link: "https://x.com/isinem",
+      target: "_blank",
+      tooltip: "X (Twitter)",
+    },
+    {
+      id: 3,
+      icon: "/images/footer/instagram-icons.png",
+      link: "https://www.instagram.com/isinem.com.tr/",
+      target: "_blank",
+      tooltip: "Instagram",
+    },
+    {
+      id: 4,
+      icon: "/images/footer/linkedin-icons.png",
+      link: "https://www.linkedin.com/company/isinem/",
+      target: "_blank",
+      tooltip: "LinkedIn",
+    },
+  ];
   return (
-    <footer className="bg-gray-900 text-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-                <Droplets className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold">İsinem</span>
-            </div>
-            <p className="text-gray-400 mb-4">
-              Profesyonel kurutma ve nem alma çözümleri ile yaşam alanlarınızı
-              sağlıklı hale getiriyoruz.
-            </p>
+    <footer className="py-6 container">
+      <div className="flex md:justify-between justify-center items-center flex-wrap gap-6">
+        <div className="flex flex-col md:items-start items-center gap-[6px]">
+          <CopyRight />
+          <div className="flex items-center gap-[14px] flex-wrap justify-center md:justify-start">
+            {links.map((contract, i) => (
+              <React.Fragment key={contract.text}>
+                <Link
+                  href={contract.href}
+                  className="text-xs leading-16 font-medium text-light-greys-400 hover:text-light-secondayColors-500"
+                >
+                  {contract.text}
+                </Link>
+                {links.length - 1 !== i && (
+                  <span className="text-light-greys-600 text-xs leading-16 font-medium">
+                    -
+                  </span>
+                )}
+              </React.Fragment>
+            ))}
           </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Hizmetlerimiz</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Rutubet Kurutma
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Nem Kurutma
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Epoksi Kurutma
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Beton Kurutma
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Kurumsal</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Hakkımızda
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Referanslar
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Kariyer
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mb-4">İletişim</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>0 (500) 123 45 67</li>
-              <li>info@isinem.com</li>
-              <li>İstanbul, Türkiye</li>
-            </ul>
+          <div className="flex items-center gap-4">
+            <a
+              href="mailto:info@hizligotur.com"
+              target="_blank"
+              className="text-black hover:text-light-secondaryColors-500"
+            >
+              info@isinem.com
+            </a>
+            <a
+              href="tel:+905399757069"
+              target="_blank"
+              className="text-black hover:text-light-secondaryColors-500"
+            >
+              +90 (539) 975 70 69
+            </a>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 İsinem. Tüm hakları saklıdır.</p>
+        <div className="flex items-center gap-6">
+          {icons.map((icon) => (
+            <Link key={icon.id} href={"#"} target={icon.target}>
+              <img
+                src={icon.icon}
+                alt="social-icon"
+                className="w-6 h-6 cursor-pointer"
+                data-tooltip-id={`tooltip-${icon.id}`}
+                data-tooltip-content={icon.tooltip}
+              />
+            </Link>
+          ))}
         </div>
       </div>
     </footer>

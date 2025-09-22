@@ -6,25 +6,27 @@ export enum SITE_ROUTES {
 
 enum HIZMETLER {
   // Hizmetler
-  NEM_KURUTMA = "/nem-kurutma",
-  RUTUBET_KURUTMA = "/rutubet-kurutma",
-  EPOKSI_KURUTMA = "/epoksi-kurutma",
-  BETON_KURUTMA = "/beton-kurutma",
-  SAP_KURUTMA = "/sap-kurutma",
-  SIVA_KURUTMA = "/siva-kurutma",
-  PARKE_KURUTMA = "/parke-kurutma",
-  BOYA_KURUTMA = "/boya-kurutma",
-  SANTIYE_KURUTMA = "/santiye-kurutma",
-  INSAAT_KURUTMA = "/insaat-kurutma",
-  NEM_ALMA = "/nem-alma",
-  OZONLA_KOKU_GIDERME = "/ozonla-koku-giderme",
+  SERVICES = "/hizmetlerimiz",
+  NEM_KURUTMA = "/hizmetler/nem-kurutma",
+  RUTUBET_KURUTMA = "/hizmetler/rutubet-kurutma",
+  EPOKSI_KURUTMA = "/hizmetler/epoksi-kurutma",
+  BETON_KURUTMA = "/hizmetler/beton-kurutma",
+  SAP_KURUTMA = "/hizmetler/sap-kurutma",
+  SIVA_KURUTMA = "/hizmetler/siva-kurutma",
+  PARKE_KURUTMA = "/hizmetler/parke-kurutma",
+  BOYA_KURUTMA = "/hizmetler/boya-kurutma",
+  SANTIYE_KURUTMA = "/hizmetler/santiye-kurutma",
+  INSAAT_KURUTMA = "/hizmetler/insaat-kurutma",
+  NEM_ALMA = "/hizmetler/nem-alma",
+  OZONLA_KOKU_GIDERME = "/hizmetler/ozonla-koku-giderme",
 }
 
 enum URUNLER {
-  KIRALIK_CIHAZLAR = "/kiralik-cihazlar",
-  NEM_ALMA_CIHAZLARI = "/nem-alma-cihazlari",
-  MAZOUTLU_ISITICILAR = "/mazoutlu-isiticilar",
-  DEZENFEKTAN_CIHAZLARI = "/dezenfektan-cihazlari",
+  URUNLERIMIZ = "/urunlerimiz",
+  KIRALIK_CIHAZLAR = "/urunler/kiralik-cihazlar",
+  NEM_ALMA_CIHAZLARI = "/urunler/nem-alma-cihazlari",
+  MAZOUTLU_ISITICILAR = "/urunler/mazoutlu-isiticilar",
+  DEZENFEKTAN_CIHAZLARI = "/urunler/dezenfektan-cihazlari",
 }
 
 export const ROUTES = {

@@ -27,6 +27,15 @@ const Features = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h3 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-16">
+            Neden Bizi
+            <span className="text-light-buttons-secondary-solidBg">
+              {" "}
+              Seçmelisiniz?
+            </span>{" "}
+          </h3>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div
