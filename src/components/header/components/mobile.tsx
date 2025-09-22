@@ -28,11 +28,11 @@ const Mobile = () => {
             <Menu size={26} className="text-light-default-baseTextBlack" />
           </button>
           <Link href={ROUTES.HOME}>
-            <Image src={"/logo.png"} width={108} height={42} alt="DILA" />
+            <Image src={"/logo.svg"} width={108} height={42} alt="Isınem" />
           </Link>
         </div>
         <div className="flex gap-14 items-center">
-          <Button>Canlı Piyasalar</Button>
+          <Button variant="secondary">İletişime Geçin</Button>
           <Language />
         </div>
       </div>

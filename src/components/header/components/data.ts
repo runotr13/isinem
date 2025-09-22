@@ -10,34 +10,74 @@ const menuItems = [
     key: "services",
     submenu: [
       {
-        title: "Kurumsal Satış ve Toptan",
-        href: ROUTES.CORPORATE_SALES,
+        title: "Nem Kurutma",
+        href: ROUTES.NEM_KURUTMA,
       },
       {
-        title: "Fiziki Altın Satışı",
-        href: ROUTES.PHYSICAL_GOLD,
+        title: "Rutubet Kurutma",
+        href: ROUTES.RUTUBET_KURUTMA,
       },
       {
-        title: "Uluslararası Lojistik Çözümleri",
-        href: ROUTES.LOGISTICS,
+        title: "Epoksi Kurutma",
+        href: ROUTES.EPOKSI_KURUTMA,
+      },
+      {
+        title: "Beton Kurutma",
+        href: ROUTES.BETON_KURUTMA,
+      },
+      {
+        title: "Şap Kurutma",
+        href: ROUTES.SAP_KURUTMA,
+      },
+      {
+        title: "Sıva Kurutma",
+        href: ROUTES.SIVA_KURUTMA,
+      },
+      {
+        title: "Parke Kurutma",
+        href: ROUTES.PARKE_KURUTMA,
+      },
+      {
+        title: "Boya Kurutma",
+        href: ROUTES.BOYA_KURUTMA,
+      },
+      {
+        title: "Şantiye Kurutma",
+        href: ROUTES.SANTIYE_KURUTMA,
+      },
+      {
+        title: "İnşaat Kurutma",
+        href: ROUTES.INSAAT_KURUTMA,
+      },
+      {
+        title: "Nem Alma",
+        href: ROUTES.NEM_ALMA,
+      },
+      {
+        title: "Ozonla Kötü Koku Giderme",
+        href: ROUTES.OZONLA_KOKU_GIDERME,
       },
     ],
   },
   {
-    title: "Finansal Araçlar",
+    title: "Ürünler",
     key: "tools",
     submenu: [
       {
-        title: "Kur Hesaplayıcı",
-        href: ROUTES.EXCHANGE_CALCULATOR,
+        title: "Kiralık Cihazlar",
+        href: ROUTES.KIRALIK_CIHAZLAR,
       },
       {
-        title: "Geçmiş Kur Verileri",
-        href: ROUTES.PAST_EXCHANGE_DATA,
+        title: "Nem Alma Cihazları",
+        href: ROUTES.NEM_ALMA_CIHAZLARI,
       },
       {
-        title: "Kâr / Zarar Analizi",
-        href: ROUTES.PROFIT_LOSS_ANALYSIS,
+        title: "Mazotlu Isıtıcılar",
+        href: ROUTES.MAZOUTLU_ISITICILAR,
+      },
+      {
+        title: "Dezenfektan Cihazları",
+        href: ROUTES.DEZENFEKTAN_CIHAZLARI,
       },
     ],
   },

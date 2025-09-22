@@ -18,7 +18,7 @@ const Web = () => {
     <div className="container relative">
       <div className="flex justify-between items-center py-6">
         <Link href={ROUTES.HOME}>
-          <Image src={"/logo.png"} width={118} height={44} alt="DILA" />
+          <Image src={"/logo.svg"} width={150} height={50} alt="Isınem  " />
         </Link>
 
         <div className="flex gap-10 items-center">
@@ -64,8 +64,7 @@ const Web = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <Button variant="third">Canlı Altın & Döviz Kurları</Button>
-          <Button>Canlı Piyasalar</Button>
+          <Button variant="secondary">İletişime Geçin</Button>
           <Language />
         </div>
       </div>
