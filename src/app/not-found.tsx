@@ -22,30 +22,14 @@ export default function NotFound() {
   }, []);
 
   return (
-    <div
-      className="min-h-screen flex items-center justify-center p-4"
-      style={{
-        background: `linear-gradient(135deg, rgba(23, 23, 23, 1) 0%, rgba(38, 38, 38, 1) 50%, rgba(69, 69, 69, 0.8) 100%)`,
-      }}
-    >
+    <div className="min-h-screen flex items-center justify-center p-4 bg-white">
       <div className="max-w-3xl w-full">
         {/* 404 Animation */}
         <div className="text-center mb-8">
           <div className="relative inline-block">
-            {/* 404 Number */}
-            <div
-              className="text-8xl md:text-9xl font-bold mb-4 animate-pulse"
-              style={{
-                background: `linear-gradient(135deg, rgba(224, 2, 66, 1) 0%, rgba(240, 56, 69, 1) 50%, rgba(242, 88, 100, 1) 100%)`,
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}
-            >
+            <div className="text-8xl md:text-9xl font-bold mb-4 text-red-500 animate-pulse">
               404
             </div>
-
-            {/* Floating Icons */}
             <div className="absolute -top-4 -left-4 text-2xl animate-bounce">
               🔍
             </div>
@@ -58,142 +42,72 @@ export default function NotFound() {
           </div>
         </div>
 
-        {/* Main Content Card */}
-        <div
-          className="rounded-2xl shadow-2xl p-8 text-center border backdrop-blur-lg mb-6"
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.6)",
-            borderColor: "rgba(255, 255, 255, 0.08)",
-          }}
-        >
-          <h1
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: "rgba(255, 255, 255, 1)" }}
-          >
+        <div className="rounded-2xl shadow-lg p-8 text-center border border-gray-200 bg-white mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
             Sayfa Bulunamadı
           </h1>
-
-          <p
-            className="text-lg mb-2"
-            style={{ color: "rgba(191, 191, 191, 1)" }}
-          >
+          <p className="text-lg mb-2 text-gray-700">
             Görünüşe göre var olmayan bir sayfayı ziyaret ettiniz.
           </p>
-
-          <p
-            className="text-base mb-6"
-            style={{ color: "rgba(140, 140, 140, 1)" }}
-          >
+          <p className="text-base mb-6 text-gray-500">
             Sayfa silinmiş, taşınmış veya bağlantı hatalı olabilir.
           </p>
 
-          {/* Countdown Timer */}
-          <div
-            className="rounded-xl p-4 mb-6 border"
-            style={{
-              backgroundColor: "rgba(38, 38, 38, 0.6)",
-              borderColor: "rgba(224, 2, 66, 0.2)",
-            }}
-          >
-            <p
-              className="font-medium mb-2"
-              style={{ color: "rgba(224, 2, 66, 1)" }}
-            >
+          <div className="rounded-xl p-4 mb-6 border bg-gray-50 border-red-100">
+            <p className="font-medium mb-2 text-red-500">
               ⏰ Otomatik yönlendirme
             </p>
-            <p className="text-sm" style={{ color: "rgba(191, 191, 191, 1)" }}>
+            <p className="text-sm text-gray-600">
               Ana sayfaya {countdown} saniye içinde yönlendirileceksiniz...
             </p>
-            <div
-              className="w-full rounded-full h-2 mt-3"
-              style={{ backgroundColor: "rgba(69, 69, 69, 1)" }}
-            >
+            <div className="w-full rounded-full h-2 mt-3 bg-gray-200">
               <div
-                className="h-2 rounded-full transition-all duration-1000 ease-linear"
-                style={{
-                  backgroundColor: "rgba(224, 2, 66, 1)",
-                  width: `${((5 - countdown) / 5) * 100}%`,
-                }}
+                className="h-2 rounded-full transition-all duration-1000 ease-linear bg-red-500"
+                style={{ width: `${((5 - countdown) / 5) * 100}%` }}
               />
             </div>
           </div>
 
-          {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
             <Link href="/" className="flex-1 sm:flex-initial">
-              <Button className="w-full sm:w-auto px-8 py-3 rounded-xl font-medium transition-all duration-200 transform hover:scale-105 shadow-lg">
+              <Button className="w-full sm:w-auto px-8 py-3 rounded-xl font-medium transition-all duration-200 transform hover:scale-105 shadow">
                 🏠 Ana Sayfaya Dön
               </Button>
             </Link>
 
             <button
               onClick={() => window.history.back()}
-              className="w-full sm:w-auto px-8 py-3 rounded-xl font-medium transition-all duration-200 border"
-              style={{
-                backgroundColor: "rgba(38, 38, 38, 1)",
-                color: "rgba(255, 255, 255, 1)",
-                borderColor: "rgba(69, 69, 69, 1)",
-              }}
+              className="w-full sm:w-auto px-8 py-3 rounded-xl font-medium border border-gray-300 text-gray-700 hover:bg-gray-100 transition-all duration-200"
             >
               ↩️ Geri Git
             </button>
           </div>
 
-          {/* Popular Links */}
           <div>
-            <p
-              className="text-sm mb-3 font-medium"
-              style={{ color: "rgba(140, 140, 140, 1)" }}
-            >
+            <p className="text-sm mb-3 font-medium text-gray-500">
               Bize ulaşmak için:
             </p>
             <div className="flex flex-wrap justify-center gap-3 text-sm">
               <Link
-                href="/kurumsal"
-                className="px-3 py-1 rounded-lg transition-colors hover:opacity-80"
-                style={{
-                  backgroundColor: "rgba(69, 69, 69, 0.5)",
-                  color: "rgba(191, 191, 191, 1)",
-                }}
+                href="/hakkimizda"
+                className="px-3 py-1 rounded-lg bg-gray-100 text-gray-600 hover:bg-gray-200 transition"
               >
                 📋 Hakkımızda
               </Link>
               <Link
                 href="/iletisim"
-                className="px-3 py-1 rounded-lg transition-colors hover:opacity-80"
-                style={{
-                  backgroundColor: "rgba(69, 69, 69, 0.5)",
-                  color: "rgba(191, 191, 191, 1)",
-                }}
+                className="px-3 py-1 rounded-lg bg-gray-100 text-gray-600 hover:bg-gray-200 transition"
               >
                 📞 İletişim
               </Link>
               <Link
                 href="/iletisim"
-                className="px-3 py-1 rounded-lg transition-colors hover:opacity-80"
-                style={{
-                  backgroundColor: "rgba(69, 69, 69, 0.5)",
-                  color: "rgba(191, 191, 191, 1)",
-                }}
+                className="px-3 py-1 rounded-lg bg-gray-100 text-gray-600 hover:bg-gray-200 transition"
               >
                 ❓ Yardım
               </Link>
             </div>
           </div>
-        </div>
-
-        {/* Fun Fact */}
-        <div
-          className="text-center rounded-xl p-4 border"
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.4)",
-            borderColor: "rgba(255, 255, 255, 0.05)",
-          }}
-        >
-          <p className="text-sm" style={{ color: "rgba(140, 140, 140, 1)" }}>
-            💡 <strong>Biliyormuydunuz?</strong> 404 hatası, "File Not Found"
-            anlamına gelir ve ilk kez 1990'da CERN'de kullanılmıştır.
-          </p>
         </div>
       </div>
     </div>
