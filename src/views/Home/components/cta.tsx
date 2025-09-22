@@ -30,7 +30,7 @@ const Cta = () => {
             </Button>
           </Link>
           <Link
-            href="https://wa.me/905399757069?text=Merhaba Berkay Bey, nem problemi yaşıyorum, yardımcı olabilir misiniz?"
+            href="https://wa.me/905419131424text=Merhaba Berkay Bey, nem problemi yaşıyorum, yardımcı olabilir misiniz?"
             target="_blank"
             rel="noopener noreferrer"
           >
