@@ -87,11 +87,11 @@ const Footer = () => {
               info@isinem.com
             </a>
             <a
-              href="tel:+905399757069"
+              href="tel:+905419131424"
               target="_blank"
               className="text-black hover:text-light-secondaryColors-500"
             >
-              +90 (539) 975 70 69
+              +90 (541) 913 14 24
             </a>
           </div>
         </div>

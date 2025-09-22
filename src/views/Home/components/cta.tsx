@@ -17,7 +17,7 @@ const Cta = () => {
         </p>
         <div className="flex gap-4 justify-center">
           <Link
-            href={"tel:+905399757069"}
+            href={"tel:+905419131424"}
             target="_blank"
             rel="noopener noreferrer"
           >

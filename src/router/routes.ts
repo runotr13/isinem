@@ -25,7 +25,7 @@ enum URUNLER {
   URUNLERIMIZ = "/urunlerimiz",
   KIRALIK_CIHAZLAR = "/urunler/kiralik-cihazlar",
   NEM_ALMA_CIHAZLARI = "/urunler/nem-alma-cihazlari",
-  MAZOUTLU_ISITICILAR = "/urunler/mazoutlu-isiticilar",
+  MAZOUTLU_ISITICILAR = "/urunler/mazotlu-isiticilar",
   DEZENFEKTAN_CIHAZLARI = "/urunler/dezenfektan-cihazlari",
 }
 
