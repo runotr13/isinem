@@ -11,7 +11,7 @@ import { NextIntlClientProvider } from "next-intl";
 
 export function generateMetadata() {
   const baseUrl =
-    process.env.NEXT_PUBLIC_SERVICE_URL || "https://www.isinemmakina.com.tr/";
+    process.env.NEXT_PUBLIC_SERVICE_URL || "https://www.isinemmakine.com.tr/";
 
   return {
     title: "Isınem | Nem Alma ve Kurutma Sistemleri",
