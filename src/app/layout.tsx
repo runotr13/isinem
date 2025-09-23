@@ -4,10 +4,10 @@ import { Viewport } from "next";
 
 import "./globals.css";
 import ProgressBar from "@/components/progress-bar";
-import ScrollToTopButton from "@/components/scroll-top-button";
 import "@/assets/fonts/index.scss";
 import CustomLayout from "@/layout/RootLayout";
 import { NextIntlClientProvider } from "next-intl";
+import SupportButtons from "@/components/supportButtons";
 
 export function generateMetadata() {
   const baseUrl =
@@ -104,7 +104,7 @@ export default async function RootLayout({
           <CustomLayout>
             <div className="">{children}</div>
           </CustomLayout>
-          <ScrollToTopButton />
+          <SupportButtons />
         </NextIntlClientProvider>
       </body>
     </html>
