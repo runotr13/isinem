@@ -1,7 +1,12 @@
+import ParkeKurutmaComp from "@/views/hizmetler/parke-kurutma";
 import React from "react";
 
 const ParkeKurutma = () => {
-  return <div>ParkeKurutma</div>;
+  return (
+    <div>
+      <ParkeKurutmaComp />
+    </div>
+  );
 };
 
 export default ParkeKurutma;

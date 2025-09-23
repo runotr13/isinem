@@ -1,7 +1,12 @@
+import BetonKurutmaComp from "@/views/hizmetler/beton-kurutma";
 import React from "react";
 
 const BetonKurutma = () => {
-  return <div>BetonKurutma</div>;
+  return (
+    <div>
+      <BetonKurutmaComp />
+    </div>
+  );
 };
 
 export default BetonKurutma;

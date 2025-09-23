@@ -1,7 +1,12 @@
+import MazotluIsiticilarComp from "@/views/urunler/mazotlu-isiticilar";
 import React from "react";
 
 const MazotluIsiticilar = () => {
-  return <div>MazotluIsiticilar</div>;
+  return (
+    <div>
+      <MazotluIsiticilarComp />
+    </div>
+  );
 };
 
 export default MazotluIsiticilar;

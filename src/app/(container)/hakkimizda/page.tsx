@@ -1,4 +1,4 @@
-import AboutComp from "@/views/About";
+import AboutComp from "@/views/hakkimizda";
 import React from "react";
 export const metadata = {
   title: "Hakkımızda",
