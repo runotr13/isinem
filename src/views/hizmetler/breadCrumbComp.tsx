@@ -1,10 +1,10 @@
 "use client";
 
-import { useServices } from "@/app/(container)/hizmetler/layout";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useServices } from "@/hooks/useServices";
 
 interface BreadcrumbItem {
   title: string;
