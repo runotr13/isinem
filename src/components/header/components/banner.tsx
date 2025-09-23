@@ -9,9 +9,12 @@ const BannerHeader = () => {
     <div className="bg-light-default-greyBg">
       <div className="container flex items-center justify-between py-3">
         <h2>ISINEM Kurutma Nem Alma</h2>
-        <div className="flex items-center gap-34 text-light-secondaryColors-600">
-          <a href="mailto:info@isinem.com" className="flex items-center gap-2">
-            <Mail size={16} /> info@isinem.com
+        <div className="flex items-center gap-[34px] text-light-secondaryColors-600">
+          <a
+            href="mailto:isinemmakine@gmail.com"
+            className="flex items-center gap-2"
+          >
+            <Mail size={16} /> isinemmakine@gmail.com
           </a>
           <a
             href={googleMapsUrl}

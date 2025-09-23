@@ -31,7 +31,7 @@ export default function RootTemplate({
     },
     contactPoint: {
       "@type": "ContactPoint",
-      email: "info@xxx.ai",
+      email: "isinemmakine@gmail.com",
       contactType: "Customer Support",
       areaServed: "TR",
       availableLanguage: ["English"],

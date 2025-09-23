@@ -80,11 +80,11 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-4">
             <a
-              href="mailto:info@hizligotur.com"
+              href="mailto:isinemmakine@gmail.com"
               target="_blank"
               className="text-black hover:text-light-secondaryColors-500"
             >
-              info@isinem.com
+              isinemmakine@gmail.com
             </a>
             <a
               href="tel:+905419131424"

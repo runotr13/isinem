@@ -40,10 +40,10 @@ const Contact = () => {
               Sorularınızı e-posta ile gönderin
             </p>
             <a
-              href="mailto:info@isinem.com"
+              href="mailto:isinemmakine@gmail.com"
               className="text-light-buttons-secondary-solidBg font-semibold"
             >
-              info@isinem.com
+              isinemmakine@gmail.com
             </a>
           </div>
 
