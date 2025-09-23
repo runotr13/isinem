@@ -5,13 +5,16 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import Language from "./language";
-import menuItems from "./data";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import clsx from "clsx";
+import useHeaderData from "./data";
+import { useTranslations } from "next-intl";
 
 const Mobile = () => {
+  const tb = useTranslations("buttons");
   const [isOpen, setIsOpen] = useState(false);
   const [openSubmenus, setOpenSubmenus] = useState<Record<string, boolean>>({});
+  const { data } = useHeaderData();
 
   const toggleSubmenu = (key: string) => {
     setOpenSubmenus((prev) => ({
@@ -32,7 +35,7 @@ const Mobile = () => {
           </Link>
         </div>
         <div className="flex gap-14 items-center">
-          <Button variant="secondary">İletişime Geçin</Button>
+          <Button variant="secondary">{tb("contact")}</Button>
           <Language />
         </div>
       </div>
@@ -51,7 +54,7 @@ const Mobile = () => {
           </button>
         </div>
         <nav className="flex flex-col p-4 gap-2">
-          {menuItems.map((item) => (
+          {data?.map((item) => (
             <div key={item.title}>
               {item.submenu ? (
                 <button

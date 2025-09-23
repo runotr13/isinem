@@ -14,41 +14,46 @@ export default function RootTemplate({
   const jsonLdOrganization = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    url: currentUrl,
-    name: "XXX AI",
+    url: URL,
+    name: "Isınem Makine",
     logo: `${URL}/logo.svg`,
     description:
-      "XXX AI provides data-driven strategies for businesses through artificial intelligence solutions.",
-    foundingDate: "2023-10-01",
+      "Isınem Makine, inşaat ve endüstriyel alanlar için profesyonel kurutma ve nem alma çözümleri sunmaktadır.",
+    foundingDate: "2025-01-01",
     founder: {
       "@type": "Person",
-      name: "Kerim Buyukakyuz",
+      name: "Berkay Ay",
     },
     address: {
       "@type": "PostalAddress",
-      addressRegion: "US",
-      addressCountry: "United States",
+      addressRegion: "TR",
+      addressCountry: "Türkiye",
     },
     contactPoint: {
       "@type": "ContactPoint",
       email: "isinemmakine@gmail.com",
-      contactType: "Customer Support",
+      contactType: "Müşteri Destek",
       areaServed: "TR",
-      availableLanguage: ["English"],
+      availableLanguage: ["Türkçe", "İngilizce"],
     },
-    sameAs: ["https://www.linkedin.com/company/xxx"],
+    sameAs: [
+      "https://www.linkedin.com/company/isinem-makine",
+      "https://www.facebook.com/isinemmakine",
+      "https://www.instagram.com/isinemmakine",
+    ],
     image: `${URL}/images/favicon.svg`,
   };
 
   const jsonLdWebPage = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "XXX AI",
-    description: "XXX AI: Shape the future with artificial intelligence.",
+    name: "Isınem Makine",
+    description:
+      "Isınem Makine, inşaat ve endüstriyel projeler için kurutma, nem alma, beton ve şap kurutma çözümleri sunmaktadır.",
     url: currentUrl,
     isPartOf: {
       "@type": "WebSite",
-      name: "XXX AI",
+      name: "Isınem Makine",
       url: URL,
     },
   };
@@ -64,7 +69,7 @@ export default function RootTemplate({
       {
         "@type": "ListItem",
         position: 1,
-        name: "Home",
+        name: "Ana Sayfa",
         item: URL,
       },
       ...(matchedBreadcrumb
@@ -84,28 +89,87 @@ export default function RootTemplate({
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
+      // ENGLISH FAQ
       {
         "@type": "Question",
-        name: "What is XXX AI?",
+        name: "How is moisture removed from buildings?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "XXX AI is a company providing artificial intelligence solutions and consulting services.",
+          text: "Moisture is removed using industrial drying systems, including dehumidifiers, air movers, and heat-assisted drying. This ensures structures stay dry and prevents mold formation.",
         },
       },
       {
         "@type": "Question",
-        name: "What services do you offer?",
+        name: "What are the benefits and risks of concrete drying?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We offer data analysis, machine learning model development, and custom artificial intelligence solutions.",
+          text: "Proper concrete drying prevents cracks and structural issues. Over-drying or uneven drying can cause shrinkage or surface defects. Using professional equipment ensures safe and effective drying.",
         },
       },
       {
         "@type": "Question",
-        name: "How can I contact you?",
+        name: "Why is screed (şap) drying important?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "You can reach us by filling out the contact form on our website or by contacting us directly via email.",
+          text: "Screed drying is essential to ensure flooring materials adhere properly and to prevent long-term moisture damage. Controlled drying reduces construction delays and maintains quality.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do industrial drying machines work?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Industrial dryers remove humidity by circulating warm, dry air or using dehumidification techniques. They accelerate the drying process and are suitable for construction sites, warehouses, and factories.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Why is drying important in industrial and construction areas?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Proper drying prevents mold, corrosion, and structural damage. It ensures safety, quality of finishes, and longevity of materials used in construction and industrial facilities.",
+        },
+      },
+
+      // TURKISH FAQ
+      {
+        "@type": "Question",
+        name: "Binalardan nem nasıl alınır?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nem, endüstriyel kurutma sistemleri kullanılarak alınır; nem alma cihazları, hava sirkülasyonu ve ısı destekli kurutma yöntemleri ile yapıların kuru kalması ve küf oluşumunun önlenmesi sağlanır.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Beton kurutmanın faydaları ve zararları nelerdir?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Doğru beton kurutma çatlak ve yapısal sorunları önler. Fazla veya düzensiz kurutma çekme ve yüzey bozukluklarına yol açabilir. Profesyonel ekipman kullanmak güvenli ve etkili kurutma sağlar.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Şap (screed) kurutma neden önemlidir?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Şap kurutma, zemin kaplama malzemelerinin düzgün yapışmasını ve uzun vadeli nem hasarlarının önlenmesini sağlar. Kontrollü kurutma, inşaat gecikmelerini azaltır ve kaliteyi korur.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Endüstriyel kurutma cihazları nasıl çalışır?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Endüstriyel kurutucular, nemi sıcak ve kuru hava dolaşımı veya nem alma teknikleri ile uzaklaştırır. Kurutma sürecini hızlandırır ve şantiye, depo ve fabrika ortamları için uygundur.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Endüstriyel ve inşaat alanlarında kurutma neden önemlidir?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Doğru kurutma, küf, korozyon ve yapısal hasarı önler. Malzemelerin güvenliği, kaplama kalitesi ve uzun ömürlü kullanım sağlanır.",
         },
       },
     ],

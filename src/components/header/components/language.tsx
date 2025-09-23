@@ -1,18 +1,14 @@
 "use client";
 
-import { ROUTES } from "@/router/routes";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import React from "react";
 import { setCookie } from "cookies-next";
 
 const Language = () => {
   const router = useRouter();
   const currentLocale = useLocale();
-  const t = useTranslations("header");
-  const tb = useTranslations("buttons");
 
   const changeLocale = (locale: string) => {
     setCookie("lang", locale, { path: "/" });

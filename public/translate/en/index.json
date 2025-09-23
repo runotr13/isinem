@@ -1,17 +1,41 @@
 {
+    "banner": {
+        "text1": "ISINEM Drying & Moisture Removal"
+    },
     "header": {
-        "basket": "Basket",
-        "sunum": "Presentations",
-        "tarihce": "History",
-        "iletisim": "Contact",
-        "hamburger": {
-            "call": "Advanced search",
-            "fav": "Favorites",
-            "signin": "Sign in / Register",
-            "basket": "Basket"
+        "home": "Home",
+        "about": "About Us",
+        "contact": "Contact",
+        "services": {
+            "text": "Services",
+            "s1": "Moisture Drying",
+            "s2": "Damp Drying",
+            "s3": "Epoxy Drying",
+            "s4": "Concrete Drying",
+            "s5": "Screed Drying",
+            "s6": "Plaster Drying",
+            "s7": "Parquet Drying",
+            "s8": "Paint Drying",
+            "s9": "Construction Site Drying",
+            "s10": "Building Drying",
+            "s11": "Moisture Removal",
+            "s12": "Odor Removal with Ozone"
+        },
+        "products": {
+            "text": "Products",
+            "p1": "Rental Devices",
+            "p2": "Moisture Removal Devices",
+            "p3": "Diesel Heaters",
+            "p4": "Disinfection Devices"
         }
     },
-    "footer": {
-        "copyright": "PERSAN HOME STUDIO {year}. ALL RIGHTS RESERVED."
+    "buttons": {
+        "wphelp": "WhatsApp Support",
+        "callhelp": "Contact Us",
+        "contact": "Get in Touch",
+        "fastcall": "Call Now",
+        "wpcall": "WhatsApp Contact",
+        "free_estimate": "Request Free Estimate",
+        "check_services": "Check Our Services"
     }
 }

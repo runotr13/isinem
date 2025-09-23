@@ -1,57 +1,41 @@
 {
+    "banner": {
+        "text1": "ISINEM Kurutma Nem Alma"
+    },
     "header": {
-        "basket": "Sepet",
-        "sunum": "Sunumlar",
-        "tarihce": "Tarihce",
-        "iletisim": "İletişim",
-        "hamburger": {
-            "call": "Gelişmiş arama",
-            "fav": "Favoriler",
-            "signin": "Giriş yap / üye ol",
-            "basket": "Sepet"
+        "home": "Ana Sayfa",
+        "about": "Hakkımızda",
+        "contact": "İletişim",
+        "services": {
+            "text": "Hizmetler",
+            "s1": "Nem Kurutma",
+            "s2": "Rutubet Kurutma",
+            "s3": "Epoksi Kurutma",
+            "s4": "Beton Kurutma",
+            "s5": "Şap Kurutma",
+            "s6": "Sıva Kurutma",
+            "s7": "Parke Kurutma",
+            "s8": "Boya Kurutma",
+            "s9": "Şantiye Kurutma",
+            "s10": "İnşaat Kurutma",
+            "s11": "Nem Alma",
+            "s12": "Ozonla Kötü Koku Giderme"
+        },
+        "products": {
+            "text": "Ürünler",
+            "p1": "Kiralık Cihazlar",
+            "p2": "Nem Alma Cihazları",
+            "p3": "Mazotlu Isıtıcılar",
+            "p4": "Dezenfektan Cihazları"
         }
     },
-    "footer": {
-        "copyright": {
-            "text": "© Persan Home Studio {year}. Tüm Hakları Saklıdır.",
-            "privacy": "Privacy Policy",
-            "terms": "Terms of Use"
-        },
-        "form": {
-            "title": "Bültene kayıt olun",
-            "text": "Fırsatlar, yeni ürünler ve koleksiyonlar için e-posta bültenimize kaydolun."
-        },
-        "product": {
-            "p1": "Ürünler",
-            "p2": "Kartelalar",
-            "p3": "Yeni Gelenler",
-            "p4": "En Beğenilenler"
-        },
-        "text": "Dekorasyon modasının Türk Tekstili kalitesiyle özgün yansımaları..."
-    },
-    "error": {
-        "input": {
-            "mail": {
-                "required": "E-posta alanı zorunludur",
-                "default": "Geçerli bir e-posta adresi giriniz"
-            }
-        }
-    },
-    "button": {
-        "send": "Gönder"
-    },
-    "otherCollection": {
-        "title": "Diğer Koleksiyonlar"
-    },
-    "login": {
-        "sendingMail": "Mail adresinize link gönderildi",
-        "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin veya destek ile iletişime geçin."
-    },
-    "verify": {
-        "start": "Doğrulama işlemi başlatılıyor...",
-        "noToken": "Geçersiz bağlantı! Token bulunamadı.",
-        "verifying": "Email doğrulanıyor...",
-        "success": "Email başarıyla doğrulandı!",
-        "fail": "Doğrulama başarısız!"
+    "buttons": {
+        "wphelp": "WhatsApp Destek",
+        "callhelp": "Bize Ulaşın",
+        "contact": "İletişime Geçin",
+        "fastcall": "Hemen Arayın",
+        "wpcall": "WhatsApp İletişim",
+        "free_estimate": "Ücretsiz Keşif Talep Et",
+        "check_services": "Hizmetlerimizi İncele"
     }
 }

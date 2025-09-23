@@ -1,6 +1,7 @@
 import "server-only";
 import "tailwindcss/tailwind.css";
 import { Viewport } from "next";
+import { cookies } from "next/headers";
 
 import "./globals.css";
 import ProgressBar from "@/components/progress-bar";
@@ -21,7 +22,6 @@ export function generateMetadata() {
       "kurutma sistemleri, nem alma cihazı, endüstriyel kurutma, şap kurutma, inşaat sonrası nem giderme, rutubet kurutma, enerji verimli makineler, parke öncesi kurutma, endüstriyel fırınlar, makine kiralama, Isınem",
     metadataBase: new URL(baseUrl),
     alternates: {
-      canonical: baseUrl,
       languages: {
         tr: baseUrl,
         en: `${baseUrl}`,
@@ -61,7 +61,7 @@ export function generateMetadata() {
       index: true,
       follow: true,
     },
-    themeColor: "#fff", // NemTürk gibi mavi ton kullanılabilir
+    themeColor: "#fff",
     applicationName: "Isınem",
     category: "Endüstriyel Kurutma",
   };
@@ -79,8 +79,10 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cookieStore = await cookies();
+  const lang = cookieStore.get("lang")?.value || "tr";
   return (
-    <html lang={"tr"}>
+    <html lang={lang}>
       <head>
         <meta charSet="UTF-8" />
         <meta
@@ -91,7 +93,7 @@ export default async function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="robots" content="index, follow" />
-        <meta name="language" content="Turkish" />
+        <meta name="language" content={lang === "tr" ? "Turkish" : "English"} />
         <meta name="copyright" content="Isınem" />
         <meta name="publisher" content="Isınem" />
       </head>

@@ -1,15 +1,18 @@
 import { Button } from "@/components/button";
 import { Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Cta = () => {
+  const tb = useTranslations("buttons");
+
   return (
     <section className="md:py-20 py-10 bg-light-buttons-secondary-solidBg">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          Nem Probleminizi Çözelim
+          Nem ve Kurutma Probleminizi Çözelim
         </h2>
         <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
           Uzman ekibimiz sizinle iletişime geçsin, ücretsiz keşif yaparak en
@@ -26,7 +29,7 @@ const Cta = () => {
               variant="third"
             >
               <Phone className="inline-block mr-2 w-5 h-5" />
-              Hemen Arayın
+              {tb("fastcall")}
             </Button>
           </Link>
           <Link
@@ -34,14 +37,17 @@ const Cta = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="third" className="flex gap-1 items-center">
+            <Button
+              variant="third"
+              className="flex gap-1 items-center transition-all transform hover:scale-105"
+            >
               <Image
                 src={"/images/footer/whatsapp-icon.png"}
                 alt="Whatsapp iletişim"
                 width={20}
                 height={20}
               />
-              WhatsApp İletişim
+              {tb("wpcall")}
             </Button>
           </Link>
         </div>

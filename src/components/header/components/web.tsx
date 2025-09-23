@@ -6,14 +6,16 @@ import { ROUTES } from "@/router/routes";
 import { Button } from "@/components/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import Language from "./language";
-import menuItems from "./data";
+import { useTranslations } from "next-intl";
+import useHeaderData from "./data";
 
 const Web = () => {
+  const tb = useTranslations("buttons");
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
 
   const handleMouseEnter = (key: string) => setHoveredMenu(key);
   const handleMouseLeave = () => setHoveredMenu(null);
-
+  const { data } = useHeaderData();
   return (
     <div className="container relative">
       <div className="flex justify-between items-center py-6">
@@ -22,7 +24,7 @@ const Web = () => {
         </Link>
 
         <div className="flex gap-10 items-center">
-          {menuItems.map((item, index) =>
+          {data?.map((item, index) =>
             item.submenu ? (
               <div
                 key={index}
@@ -65,7 +67,12 @@ const Web = () => {
 
         <div className="flex items-center gap-4">
           <Link href={ROUTES.CONTACT}>
-            <Button variant="secondary">İletişime Geçin</Button>
+            <Button
+              variant="secondary"
+              className="transition-all transform hover:scale-105"
+            >
+              {tb("contact")}
+            </Button>
           </Link>
           <Language />
         </div>

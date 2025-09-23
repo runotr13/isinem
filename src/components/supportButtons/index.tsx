@@ -7,8 +7,10 @@ import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import { Button } from "../button";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function SupportButtons() {
+  const tb = useTranslations("buttons");
   const scrollToTop = () => {
     if (typeof window !== "undefined") {
       window.scrollTo({
@@ -43,7 +45,7 @@ export default function SupportButtons() {
             height={30}
             className="md:hidden inline"
           />
-          <span className="md:inline hidden">WhatsApp Destek</span>
+          <span className="md:inline hidden">{tb("wphelp")}</span>
         </Button>
       </Link>
 
@@ -55,7 +57,7 @@ export default function SupportButtons() {
         >
           <Phone className="inline-block md:mr-2 md:w-5 md:h-5 w-7 h-7" />
 
-          <span className="md:inline hidden">Bize Ulaşın</span>
+          <span className="md:inline hidden">{tb("callhelp")}</span>
         </Button>
       </Link>
       <button
