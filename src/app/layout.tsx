@@ -9,6 +9,7 @@ import "@/assets/fonts/index.scss";
 import CustomLayout from "@/layout/RootLayout";
 import { NextIntlClientProvider } from "next-intl";
 import SupportButtons from "@/components/supportButtons";
+import ServiceWorkerRegister from "@/utils/sw";
 
 export function generateMetadata() {
   const baseUrl =
@@ -107,6 +108,7 @@ export default async function RootLayout({
             <div className="">{children}</div>
           </CustomLayout>
           <SupportButtons />
+          <ServiceWorkerRegister />
         </NextIntlClientProvider>
       </body>
     </html>

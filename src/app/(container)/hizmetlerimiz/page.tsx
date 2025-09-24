@@ -1,12 +1,22 @@
 import HizmetlerimizComp from "@/views/hizmetlerimiz";
-import React from "react";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Hizmetlerimiz - Isınem",
+export const metadata: Metadata = {
+  title: "Hizmetlerimiz | Isınem",
   description:
-    "Isınem, nem ve rutubet kurutma, epoksi, beton ve şap kurutma hizmetlerinde uzman çözümler sunar. Şantiye ve inşaat projelerinizde güvenilir destek alabilirsiniz.",
-  keywords:
-    "Isınem, hizmetlerimiz, nem kurutma, rutubet kurutma, epoksi kurutma, beton kurutma, şap kurutma, inşaat hizmetleri, şantiye çözümleri, hızlı çözüm, güvenilir hizmet",
+    "Isınem ile inşaat ve şantiye projelerinizde beton, şap, sıva, epoksi, parke ve nem kurutma hizmetlerinde hızlı ve etkili çözümler sunuyoruz. Profesyonel makineler ve deneyimli ekip ile güvenilir destek alın.",
+  keywords: [
+    "beton kurutma",
+    "şap kurutma",
+    "sıva kurutma",
+    "epoksi kurutma",
+    "parke kurutma",
+    "nem kurutma",
+    "rutubet kurutma",
+    "şantiye hizmetleri",
+    "inşaat kurutma",
+    "Isınem hizmetler",
+  ],
 };
 
 const Hizmetlerimiz = () => {

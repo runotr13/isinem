@@ -1,12 +1,22 @@
 import UrunlerimizComp from "@/views/urunlerimiz";
-import React from "react";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Ürünlerimiz - Isınem",
+export const metadata: Metadata = {
+  title: "Ürünlerimiz | Isınem",
   description:
-    "Isınem’in ürünleri: Kiralık Cihazlar, Nem Alma Cihazları, Mazotlu Isıtıcılar ve Dezenfektan Cihazları ile projelerinize hızlı ve güvenilir çözümler sağlayın.",
-  keywords:
-    "Isınem, ürünlerimiz, Kiralık Cihazlar, Nem Alma Cihazları, Mazotlu Isıtıcılar, Dezenfektan Cihazları, nem kurutma, rutubet kurutma, epoksi kurutma, beton kurutma, şap kurutma",
+    "Isınem’in ürünleri ile projelerinize hızlı ve güvenilir çözümler sağlayın. Kiralık Cihazlar, Nem Alma Cihazları, Mazotlu Isıtıcılar ve Dezenfektan Cihazları ile inşaat ve şantiye alanlarında etkili çözümler sunuyoruz.",
+  keywords: [
+    "Isınem",
+    "ürünlerimiz",
+    "Kiralık Cihazlar",
+    "Nem Alma Cihazları",
+    "Mazotlu Isıtıcılar",
+    "Dezenfektan Cihazları",
+    "inşaat ekipmanları",
+    "şantiye cihazları",
+    "nem giderme cihazları",
+    "profesyonel makineler",
+  ],
 };
 
 const Urunlerimiz = () => {
