@@ -39,7 +39,7 @@ export default function HizmetlerLayout({ children }: { children: ReactNode }) {
                 const isActive = pathname === service.href;
                 return (
                   <li key={service.href} className="min-w-44">
-                    <Link href={service.href}>
+                    <Link href={service.href} title={service.title ?? "Isınem"}>
                       <Button
                         variant={isActive ? "secondary" : "third"}
                         className="w-full justify-start"

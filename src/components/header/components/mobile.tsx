@@ -30,8 +30,14 @@ const Mobile = () => {
           <button onClick={() => setIsOpen(true)}>
             <Menu size={26} className="text-light-default-baseTextBlack" />
           </button>
-          <Link href={ROUTES.HOME}>
-            <Image src={"/logo.svg"} width={108} height={42} alt="Isınem" />
+          <Link href={ROUTES.HOME} title="Anasayfa">
+            <Image
+              src={"/logo.svg"}
+              width={108}
+              height={42}
+              alt="Isınem"
+              priority={true}
+            />
           </Link>
         </div>
         <div className="flex gap-14 items-center">
@@ -73,6 +79,7 @@ const Mobile = () => {
                   href={item.href || "#"}
                   className="block py-2 text-sm font-medium text-gray-800 hover:text-primary"
                   onClick={() => setIsOpen(false)}
+                  title={item.title ?? "Isınem"}
                 >
                   {item.title}
                 </Link>
@@ -86,6 +93,7 @@ const Mobile = () => {
                       href={sub.href}
                       className="block py-1 text-sm text-gray-600 hover:text-primary"
                       onClick={() => setIsOpen(false)}
+                      title={sub?.title ?? "Isınem"}
                     >
                       {sub.title}
                     </Link>

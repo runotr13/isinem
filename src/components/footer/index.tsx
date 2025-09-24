@@ -65,6 +65,7 @@ const Footer = () => {
             {links.map((contract, i) => (
               <React.Fragment key={contract.text}>
                 <Link
+                  title={contract.text ?? "Isınem"}
                   href={contract.href}
                   className="text-xs leading-16 font-medium text-light-greys-400 hover:text-light-secondayColors-500"
                 >
@@ -83,6 +84,7 @@ const Footer = () => {
               href="mailto:isinemmakine@gmail.com"
               target="_blank"
               className="text-black hover:text-light-secondaryColors-500"
+              title="E-posta Gönder"
             >
               isinemmakine@gmail.com
             </a>
@@ -90,6 +92,7 @@ const Footer = () => {
               href="tel:+905419131424"
               target="_blank"
               className="text-black hover:text-light-secondaryColors-500"
+              title="Bizi Arayın"
             >
               +90 (541) 913 14 24
             </a>
@@ -98,7 +101,12 @@ const Footer = () => {
 
         <div className="flex items-center gap-6">
           {icons.map((icon) => (
-            <Link key={icon.id} href={"#"} target={icon.target}>
+            <Link
+              key={icon.id}
+              href={"#"}
+              target={icon.target}
+              title={icon.tooltip}
+            >
               <img
                 src={icon.icon}
                 alt="social-icon"

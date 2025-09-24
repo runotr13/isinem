@@ -19,8 +19,14 @@ const Web = () => {
   return (
     <div className="container relative">
       <div className="flex justify-between items-center py-6">
-        <Link href={ROUTES.HOME}>
-          <Image src={"/logo.svg"} width={150} height={50} alt="Isınem  " />
+        <Link href={ROUTES.HOME} title="Anasayfa">
+          <Image
+            src={"/logo.svg"}
+            width={150}
+            height={50}
+            alt="Isınem  "
+            priority={true}
+          />
         </Link>
 
         <div className="flex gap-10 items-center">
@@ -44,6 +50,7 @@ const Web = () => {
                 <div className="absolute top-full left-0 pt-2 min-w-64 bg-white shadow-md rounded-md py-2 z-10 hidden group-hover:block">
                   {item.submenu.map((sub, subIndex) => (
                     <Link
+                      title={sub?.title ?? "Isınem"}
                       key={subIndex}
                       href={sub.href}
                       className="block px-4 py-2 hover:bg-gray-100"
@@ -55,6 +62,7 @@ const Web = () => {
               </div>
             ) : (
               <Link
+                title={item?.title ?? "Isınem"}
                 key={index}
                 href={item.href}
                 className="text-base font-medium"
@@ -66,7 +74,7 @@ const Web = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <Link href={ROUTES.CONTACT}>
+          <Link href={ROUTES.CONTACT} title={tb("contact")}>
             <Button
               variant="secondary"
               className="transition-all transform hover:scale-105"

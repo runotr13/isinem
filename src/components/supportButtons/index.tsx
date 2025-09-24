@@ -26,6 +26,7 @@ export default function SupportButtons() {
         href="https://wa.me/905419131424text=Merhaba Berkay Bey, destek hattından ulaşmak istiyorum."
         target="_blank"
         rel="noopener noreferrer"
+        title={tb("wphelp")}
       >
         <Button
           variant="primary"
@@ -50,7 +51,11 @@ export default function SupportButtons() {
       </Link>
 
       {/* Bize Ulaşın */}
-      <Link href={"tel:+905419131424"} className="w-full">
+      <Link
+        href={"tel:+905419131424"}
+        className="w-full"
+        title={tb("callhelp")}
+      >
         <Button
           className="w-full transition-all transform hover:scale-105"
           variant="secondary"

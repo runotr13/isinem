@@ -23,6 +23,7 @@ const Cta = () => {
             href={"tel:+905419131424"}
             target="_blank"
             rel="noopener noreferrer"
+            title={tb("fastcall")}
           >
             <Button
               className="transition-all transform hover:scale-105"
@@ -36,6 +37,7 @@ const Cta = () => {
             href="https://wa.me/905419131424text=Merhaba Berkay Bey, nem problemi yaşıyorum, yardımcı olabilir misiniz?"
             target="_blank"
             rel="noopener noreferrer"
+            title={tb("wpcall")}
           >
             <Button
               variant="third"

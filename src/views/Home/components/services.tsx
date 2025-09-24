@@ -145,7 +145,7 @@ const Services = () => {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 {service.description}
               </p>
-              <Link href={service.link}>
+              <Link href={service.link} title={service.title ?? "Isınem"}>
                 <button className="flex items-center text-light-buttons-secondary-solidBg font-semibold hover:text-blue-700 transition-colors group">
                   Detayları Gör
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

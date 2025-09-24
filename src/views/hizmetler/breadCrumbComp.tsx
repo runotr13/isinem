@@ -55,6 +55,7 @@ const BreadCrumbComp = () => {
                   </div>
                 ) : (
                   <Link
+                    title={item.title ?? "Isınem"}
                     href={item.href}
                     className="group flex items-center px-3 py-1.5 rounded-lg hover:bg-white hover:shadow-sm border border-transparent hover:border-slate-200 transition-all duration-200"
                   >

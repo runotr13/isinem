@@ -26,7 +26,11 @@ const BannerHeader = () => {
             <MapPin size={16} /> Sultan Selim Mahallesi, Kağıthane/İstanbul
           </a>
 
-          <a href="tel:+905419131424" className="flex items-center gap-2">
+          <a
+            href="tel:+905419131424"
+            className="flex items-center gap-2"
+            title="Bizi Arayın"
+          >
             <Phone size={16} /> +90 (541) 913 14 24
           </a>
         </div>

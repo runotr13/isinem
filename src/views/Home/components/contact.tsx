@@ -28,6 +28,7 @@ const Contact = () => {
             <a
               href="tel:+905419131424"
               className="text-light-buttons-secondary-solidBg font-semibold"
+              title="Bizi Arayın"
             >
               +90 (541) 913 14 24
             </a>
@@ -42,6 +43,7 @@ const Contact = () => {
             <a
               href="mailto:isinemmakine@gmail.com"
               className="text-light-buttons-secondary-solidBg font-semibold"
+              title="E-posta Gönder"
             >
               isinemmakine@gmail.com
             </a>
@@ -58,6 +60,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-light-buttons-secondary-solidBg  font-semibold"
+              title="Haritada Gör"
             >
               Sultan Selim Mahallesi, Kağıthane/İstanbul
             </a>

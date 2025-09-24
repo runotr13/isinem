@@ -27,12 +27,12 @@ const HeroSection = () => {
             çözüyoruz.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href={ROUTES.CONTACT}>
+            <Link href={ROUTES.CONTACT} title={tb("free_estimate")}>
               <Button className="md:w-auto w-full transition-all transform hover:scale-105">
                 {tb("free_estimate")}
               </Button>
             </Link>
-            <Link href={ROUTES.SERVICES}>
+            <Link href={ROUTES.SERVICES} title={tb("check_services")}>
               <Button
                 variant="secondary"
                 className="md:w-auto w-full transition-all transform hover:scale-105"
