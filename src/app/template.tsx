@@ -194,6 +194,21 @@ export default function RootTemplate({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebPage) }}
       />
+      {/* Google Analytics */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-Z59VW9NXWJ"
+      ></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Z59VW9NXWJ', { page_path: '${pathname}' });
+          `,
+        }}
+      />
       {children}
     </>
   );
