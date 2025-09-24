@@ -62,14 +62,12 @@ export function generateMetadata() {
       index: true,
       follow: true,
     },
-    themeColor: "#fff",
     applicationName: "Isınem",
     category: "Endüstriyel Kurutma",
   };
 }
 
 export const viewport: Viewport = {
-  themeColor: "#FFFFFF",
   width: "device-width",
   initialScale: 1.0,
   maximumScale: 5.0,

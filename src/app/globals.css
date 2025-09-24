@@ -154,3 +154,10 @@ a {
   background: #5578ab;
   color: #fff;
 }
+
+input,
+textarea {
+  outline: none;
+  border: 1px solid #ccc;
+  transition: border 0.2s;
+}
