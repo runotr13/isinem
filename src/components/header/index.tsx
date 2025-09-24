@@ -25,7 +25,7 @@ const Header = () => {
       <div className="hidden md:block">
         <div
           className={`transition-all duration-500 overflow-hidden ${
-            hideBanner ? "max-h-0 opacity-0" : "max-h-40 opacity-100"
+            hideBanner ? "hidden" : "block"
           }`}
         >
           <BannerHeader />
